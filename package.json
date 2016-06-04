@@ -1,6 +1,6 @@
 {
   "name": "d3-scale-chromatic",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Sequential, diverging and categorical color scales from ColorBrewer.",
   "keywords": [
     "d3",
