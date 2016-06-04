@@ -1,6 +1,6 @@
 # d3-scale-chromatic
 
-Color schemes from [ColorBrewer](http://colorbrewer2.org) by Cynthia A. Brewer. These color schemes are intended for use with [d3.scaleOrdinal](https://github.com/d3/d3-scale/blob/master/README.md#ordinal-scales), [d3.scaleQuantize](https://github.com/d3/d3-scale/blob/master/README.md#quantize-scales) or [d3.scaleQuantile](https://github.com/d3/d3-scale/blob/master/README.md#quantile-scales), but they are simply arrays of hexadecimal RGB color strings, so you can use them however you like!
+Color schemes from [ColorBrewer](http://colorbrewer2.org) by Cynthia A. Brewer. These color schemes are intended for use with [d3.scaleOrdinal](https://github.com/d3/d3-scale/blob/master/README.md#ordinal-scales), [d3.scaleQuantize](https://github.com/d3/d3-scale/blob/master/README.md#quantize-scales) or [d3.scaleQuantile](https://github.com/d3/d3-scale/blob/master/README.md#quantile-scales), but each scheme is simply an array of hexadecimal RGB color strings, so use them however you like!
 
 ## Installing
 
