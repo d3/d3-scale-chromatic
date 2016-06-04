@@ -1,0 +1,10 @@
+import scheme from "./scheme";
+
+export default scheme([
+  "1b9e77d95f027570b3",
+  "1b9e77d95f027570b3e7298a",
+  "1b9e77d95f027570b3e7298a66a61e",
+  "1b9e77d95f027570b3e7298a66a61ee6ab02",
+  "1b9e77d95f027570b3e7298a66a61ee6ab02a6761d",
+  "1b9e77d95f027570b3e7298a66a61ee6ab02a6761d666666"
+]);
