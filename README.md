@@ -24,33 +24,49 @@ var ylGn5 = d3.scaleOrdinal().range(d3_scale_chromatic.schemeYlGn(5));
 
 <a href="#schemeAccent" name="schemeAccent">#</a> d3.<b>schemeAccent</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/accent.png" width="100%" height="40" alt="Accent">
+
 Returns the Accent color scheme with *n* colors; *n* must be in the range [3,8].
 
 <a href="#schemeDark2" name="schemeDark2">#</a> d3.<b>schemeDark2</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/dark2.png" width="100%" height="40" alt="Dark2">
 
 Returns the Dark2 color scheme with *n* colors; *n* must be in the range [3,8].
 
 <a href="#schemePaired" name="schemePaired">#</a> d3.<b>schemePaired</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/paired.png" width="100%" height="40" alt="Paired">
+
 Returns the Paired color scheme with *n* colors; *n* must be in the range [3,12].
 
 <a href="#schemePastel1" name="schemePastel1">#</a> d3.<b>schemePastel1</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pastel1.png" width="100%" height="40" alt="Pastel1">
 
 Returns the Pastel1 color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemePastel2" name="schemePastel2">#</a> d3.<b>schemePastel2</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pastel2.png" width="100%" height="40" alt="Pastel2">
+
 Returns the Pastel2 color scheme with *n* colors; *n* must be in the range [3,8].
 
 <a href="#schemeSet1" name="schemeSet1">#</a> d3.<b>schemeSet1</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/set1.png" width="100%" height="40" alt="Set1">
 
 Returns the Set1 color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeSet2" name="schemeSet2">#</a> d3.<b>schemeSet2</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/set2.png" width="100%" height="40" alt="Set2">
+
 Returns the Set2 color scheme with *n* colors; *n* must be in the range [3,8].
 
 <a href="#schemeSet3" name="schemeSet3">#</a> d3.<b>schemeSet3</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/set3.png" width="100%" height="40" alt="Set3">
 
 Returns the Set3 color scheme with *n* colors; *n* must be in the range [3,12].
 
