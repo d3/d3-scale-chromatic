@@ -58,37 +58,55 @@ Returns the Set3 color scheme with *n* colors; *n* must be in the range [3,12].
 
 <a href="#schemeBrBG" name="schemeBrBG">#</a> d3.<b>schemeBrBG</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/br-b-g.png" width="100%" height="40" alt="BrBG">
+
 Returns the BrBG color scheme with *n* colors; *n* must be in the range [3,11].
 
 <a href="#schemePRGn" name="schemePRGn">#</a> d3.<b>schemePRGn</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/p-r-gn.png" width="100%" height="40" alt="PRGn">
 
 Returns the PRGn color scheme with *n* colors; *n* must be in the range [3,11].
 
 <a href="#schemePiYG" name="schemePiYG">#</a> d3.<b>schemePiYG</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pi-y-g.png" width="100%" height="40" alt="PiYG">
+
 Returns the PiYG color scheme with *n* colors; *n* must be in the range [3,11].
 
 <a href="#schemePuOr" name="schemePuOr">#</a> d3.<b>schemePuOr</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pu-or.png" width="100%" height="40" alt="PuOr">
 
 Returns the PuOr color scheme with *n* colors; *n* must be in the range [3,11].
 
 <a href="#schemeRdBu" name="schemeRdBu">#</a> d3.<b>schemeRdBu</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/rd-bu.png" width="100%" height="40" alt="RdBu">
+
 Returns the RdBu color scheme with *n* colors; *n* must be in the range [3,11].
 
 <a href="#schemeRdGy" name="schemeRdGy">#</a> d3.<b>schemeRdGy</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/rd-gy.png" width="100%" height="40" alt="RdGy">
 
 Returns the RdGy color scheme with *n* colors; *n* must be in the range [3,11].
 
 <a href="#schemeRdYlBu" name="schemeRdYlBu">#</a> d3.<b>schemeRdYlBu</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/rd-yl-bu.png" width="100%" height="40" alt="RdYlBu">
+
 Returns the RdYlBu color scheme with *n* colors; *n* must be in the range [3,11].
 
 <a href="#schemeRdYlGn" name="schemeRdYlGn">#</a> d3.<b>schemeRdYlGn</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/rd-yl-gn.png" width="100%" height="40" alt="RdYlGn">
+
 Returns the RdYlGn color scheme with *n* colors; *n* must be in the range [3,11].
 
 <a href="#schemeSpectral" name="schemeSpectral">#</a> d3.<b>schemeSpectral</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/spectral.png" width="100%" height="40" alt="Spectral">
 
 Returns the Spectral color scheme with *n* colors; *n* must be in the range [3,11].
 
