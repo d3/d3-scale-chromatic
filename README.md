@@ -114,25 +114,37 @@ Returns the Spectral color scheme with *n* colors; *n* must be in the range [3,1
 
 <a href="#schemeBlues" name="schemeBlues">#</a> d3.<b>schemeBlues</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/blues.png" width="100%" height="40" alt="Blues">
+
 Returns the Blues color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeGreens" name="schemeGreens">#</a> d3.<b>schemeGreens</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/greens.png" width="100%" height="40" alt="Greens">
 
 Returns the Greens color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeGreys" name="schemeGreys">#</a> d3.<b>schemeGreys</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/greys.png" width="100%" height="40" alt="Greys">
+
 Returns the Greys color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeOranges" name="schemeOranges">#</a> d3.<b>schemeOranges</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/oranges.png" width="100%" height="40" alt="Oranges">
 
 Returns the Oranges color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemePurples" name="schemePurples">#</a> d3.<b>schemePurples</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/purples.png" width="100%" height="40" alt="Purples">
+
 Returns the Purples color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeReds" name="schemeReds">#</a> d3.<b>schemeReds</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/reds.png" width="100%" height="40" alt="Reds">
 
 Returns the Reds color scheme with *n* colors; *n* must be in the range [3,9].
 
