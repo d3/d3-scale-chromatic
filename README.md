@@ -152,48 +152,72 @@ Returns the Reds color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeBuGn" name="schemeBuGn">#</a> d3.<b>schemeBuGn</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/bu-gn.png" width="100%" height="40" alt="Reds">
+
 Returns the BuGn color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeBuPu" name="schemeBuPu">#</a> d3.<b>schemeBuPu</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/bu-pu.png" width="100%" height="40" alt="Reds">
 
 Returns the BuPu color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeGnBu" name="schemeGnBu">#</a> d3.<b>schemeGnBu</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/gn-bu.png" width="100%" height="40" alt="Reds">
+
 Returns the GnBu color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeOrRd" name="schemeOrRd">#</a> d3.<b>schemeOrRd</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/or-rd.png" width="100%" height="40" alt="Reds">
 
 Returns the OrRd color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemePuBuGn" name="schemePuBuGn">#</a> d3.<b>schemePuBuGn</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pu-bu-gn.png" width="100%" height="40" alt="Reds">
+
 Returns the PuBuGn color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemePuBu" name="schemePuBu">#</a> d3.<b>schemePuBu</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pu-bu.png" width="100%" height="40" alt="Reds">
 
 Returns the PuBu color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemePuRd" name="schemePuRd">#</a> d3.<b>schemePuRd</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pu-rd.png" width="100%" height="40" alt="Reds">
+
 Returns the PuRd color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeRdPu" name="schemeRdPu">#</a> d3.<b>schemeRdPu</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/rd-pu.png" width="100%" height="40" alt="Reds">
 
 Returns the RdPu color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeYlGnBu" name="schemeYlGnBu">#</a> d3.<b>schemeYlGnBu</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/yl-gn-bu.png" width="100%" height="40" alt="Reds">
+
 Returns the YlGnBu color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeYlGn" name="schemeYlGn">#</a> d3.<b>schemeYlGn</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/yl-gn.png" width="100%" height="40" alt="Reds">
 
 Returns the YlGn color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeYlOrBr" name="schemeYlOrBr">#</a> d3.<b>schemeYlOrBr</b>(<i>n</i>)
 
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/yl-or-br.png" width="100%" height="40" alt="Reds">
+
 Returns the YlOrBr color scheme with *n* colors; *n* must be in the range [3,9].
 
 <a href="#schemeYlOrRd" name="schemeYlOrRd">#</a> d3.<b>schemeYlOrRd</b>(<i>n</i>)
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/yl-or-rd.png" width="100%" height="40" alt="Reds">
 
 Returns the YlOrRd color scheme with *n* colors; *n* must be in the range [3,9].
