@@ -1,8 +1,3 @@
-import {scaleOrdinal} from "d3-scale";
 import colors from "../colors";
 
-var colorsSet3 = colors("8dd3c7ffffb3bebadafb807280b1d3fdb462b3de69fccde5d9d9d9bc80bdccebc5ffed6f");
-
-export default function() {
-  return scaleOrdinal().range(colorsSet3);
-}
+export default colors("8dd3c7ffffb3bebadafb807280b1d3fdb462b3de69fccde5d9d9d9bc80bdccebc5ffed6f");

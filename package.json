@@ -1,7 +1,7 @@
 {
   "name": "d3-scale-chromatic",
   "version": "0.1.0",
-  "description": "Sequential, diverging and categorical color scales from ColorBrewer.",
+  "description": "Sequential, diverging and categorical color schemes from ColorBrewer.",
   "keywords": [
     "d3",
     "color",
@@ -22,10 +22,10 @@
     "url": "https://github.com/d3/d3-scale-chromatic.git"
   },
   "scripts": {
-    "pretest": "rm -rf build && mkdir build && json2module package.json > build/package.js && rollup -f umd -g d3-interpolate:d3_interpolate,d3-scale:d3_scale -n d3_scale_chromatic -o build/d3-scale-chromatic.js -- index.js",
+    "pretest": "rm -rf build && mkdir build && json2module package.json > build/package.js && rollup -f umd -g d3-interpolate:d3_interpolate -n d3_scale_chromatic -o build/d3-scale-chromatic.js -- index.js",
     "test": "tape 'test/**/*-test.js' && eslint index.js src test",
     "prepublish": "npm run test && uglifyjs build/d3-scale-chromatic.js -c -m -o build/d3-scale-chromatic.min.js",
-    "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git push --tags && cp build/d3-scale-chromatic.js ../d3.github.com/d3-scale-chromatic.v0.1.js && cp build/d3-scale-chromatic.min.js ../d3.github.com/d3-scale-chromatic.v0.1.min.js && cd ../d3.github.com && git add d3-scale-chromatic.v0.1.js d3-scale-chromatic.v0.1.min.js && git commit -m \"d3-scale-chromatic ${VERSION}\" && git push && cd - && zip -j build/d3-scale-chromatic.zip -- LICENSE README.md build/d3-scale-chromatic.js build/d3-scale-chromatic.min.js"
+    "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git push --tags && cp build/d3-scale-chromatic.js ../d3.github.com/d3-scale-chromatic.v0.2.js && cp build/d3-scale-chromatic.min.js ../d3.github.com/d3-scale-chromatic.v0.2.min.js && cd ../d3.github.com && git add d3-scale-chromatic.v0.2.js d3-scale-chromatic.v0.2.min.js && git commit -m \"d3-scale-chromatic ${VERSION}\" && git push && cd - && zip -j build/d3-scale-chromatic.zip -- LICENSE README.md build/d3-scale-chromatic.js build/d3-scale-chromatic.min.js"
   },
   "devDependencies": {
     "eslint": "2",
@@ -35,7 +35,6 @@
     "uglify-js": "2"
   },
   "dependencies": {
-    "d3-interpolate": "~0.8.1",
-    "d3-scale": "~0.7.2"
+    "d3-interpolate": "~0.8.1"
   }
 }
