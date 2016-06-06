@@ -87,55 +87,55 @@ An array of twelve categorical colors represented as RGB hexadecimal strings.
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/BrBG.png" width="100%" height="40" alt="BrBG">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “BrBG” diverging color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “BrBG” diverging color scheme represented as an RGB string.
 
 <a href="#interpolatePRGn" name="interpolatePRGn">#</a> d3.<b>interpolatePRGn</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/PRGn.png" width="100%" height="40" alt="PRGn">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “PRGn” diverging color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “PRGn” diverging color scheme represented as an RGB string.
 
 <a href="#interpolatePiYG" name="interpolatePiYG">#</a> d3.<b>interpolatePiYG</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/PiYG.png" width="100%" height="40" alt="PiYG">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “PiYG” diverging color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “PiYG” diverging color scheme represented as an RGB string.
 
 <a href="#interpolatePuOr" name="interpolatePuOr">#</a> d3.<b>interpolatePuOr</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/PuOr.png" width="100%" height="40" alt="PuOr">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “PuOr” diverging color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “PuOr” diverging color scheme represented as an RGB string.
 
 <a href="#interpolateRdBu" name="interpolateRdBu">#</a> d3.<b>interpolateRdBu</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/RdBu.png" width="100%" height="40" alt="RdBu">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “RdBu” diverging color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “RdBu” diverging color scheme represented as an RGB string.
 
 <a href="#interpolateRdGy" name="interpolateRdGy">#</a> d3.<b>interpolateRdGy</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/RdGy.png" width="100%" height="40" alt="RdGy">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “RdGy” diverging color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “RdGy” diverging color scheme represented as an RGB string.
 
 <a href="#interpolateRdYlBu" name="interpolateRdYlBu">#</a> d3.<b>interpolateRdYlBu</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/RdYlBu.png" width="100%" height="40" alt="RdYlBu">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “RdYlBu” diverging color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “RdYlBu” diverging color scheme represented as an RGB string.
 
 <a href="#interpolateRdYlGn" name="interpolateRdYlGn">#</a> d3.<b>interpolateRdYlGn</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/RdYlGn.png" width="100%" height="40" alt="RdYlGn">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “RdYlGn” diverging color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “RdYlGn” diverging color scheme represented as an RGB string.
 
 <a href="#interpolateSpectral" name="interpolateSpectral">#</a> d3.<b>interpolateSpectral</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Spectral.png" width="100%" height="40" alt="Spectral">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “Spectral” diverging color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “Spectral” diverging color scheme represented as an RGB string.
 
 ### Sequential (Single Hue)
 
@@ -143,37 +143,37 @@ Given a number *t* in the range [0,1], returns the corresponding color from the 
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Blues.png" width="100%" height="40" alt="Blues">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “Blues” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “Blues” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateGreens" name="interpolateGreens">#</a> d3.<b>interpolateGreens</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Greens.png" width="100%" height="40" alt="Greens">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “Greens” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “Greens” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateGreys" name="interpolateGreys">#</a> d3.<b>interpolateGreys</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Greys.png" width="100%" height="40" alt="Greys">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “Greys” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “Greys” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateOranges" name="interpolateOranges">#</a> d3.<b>interpolateOranges</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Oranges.png" width="100%" height="40" alt="Oranges">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “Oranges” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “Oranges” sequential color scheme represented as an RGB string.
 
 <a href="#interpolatePurples" name="interpolatePurples">#</a> d3.<b>interpolatePurples</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Purples.png" width="100%" height="40" alt="Purples">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “Purples” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “Purples” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateReds" name="interpolateReds">#</a> d3.<b>interpolateReds</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Reds.png" width="100%" height="40" alt="Reds">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “Reds” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “Reds” sequential color scheme represented as an RGB string.
 
 ### Sequential (Multi-Hue)
 
@@ -181,70 +181,70 @@ Given a number *t* in the range [0,1], returns the corresponding color from the 
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/BuGn.png" width="100%" height="40" alt="BuGn">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “BuGn” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “BuGn” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateBuPu" name="interpolateBuPu">#</a> d3.<b>interpolateBuPu</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/BuPu.png" width="100%" height="40" alt="BuPu">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “BuPu” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “BuPu” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateGnBu" name="interpolateGnBu">#</a> d3.<b>interpolateGnBu</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/GnBu.png" width="100%" height="40" alt="GnBu">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “GnBu” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “GnBu” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateOrRd" name="interpolateOrRd">#</a> d3.<b>interpolateOrRd</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/OrRd.png" width="100%" height="40" alt="OrRd">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “OrRd” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “OrRd” sequential color scheme represented as an RGB string.
 
 <a href="#interpolatePuBuGn" name="interpolatePuBuGn">#</a> d3.<b>interpolatePuBuGn</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/PuBuGn.png" width="100%" height="40" alt="PuBuGn">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “PuBuGn” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “PuBuGn” sequential color scheme represented as an RGB string.
 
 <a href="#interpolatePuBu" name="interpolatePuBu">#</a> d3.<b>interpolatePuBu</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/PuBu.png" width="100%" height="40" alt="PuBu">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “PuBu” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “PuBu” sequential color scheme represented as an RGB string.
 
 <a href="#interpolatePuRd" name="interpolatePuRd">#</a> d3.<b>interpolatePuRd</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/PuRd.png" width="100%" height="40" alt="PuRd">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “PuRd” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “PuRd” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateRdPu" name="interpolateRdPu">#</a> d3.<b>interpolateRdPu</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/RdPu.png" width="100%" height="40" alt="RdPu">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “RdPu” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “RdPu” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateYlGnBu" name="interpolateYlGnBu">#</a> d3.<b>interpolateYlGnBu</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/YlGnBu.png" width="100%" height="40" alt="YlGnBu">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “YlGnBu” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “YlGnBu” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateYlGn" name="interpolateYlGn">#</a> d3.<b>interpolateYlGn</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/YlGn.png" width="100%" height="40" alt="YlGn">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “YlGn” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “YlGn” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateYlOrBr" name="interpolateYlOrBr">#</a> d3.<b>interpolateYlOrBr</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/YlOrBr.png" width="100%" height="40" alt="YlOrBr">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “YlOrBr” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “YlOrBr” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateYlOrRd" name="interpolateYlOrRd">#</a> d3.<b>interpolateYlOrRd</b>(*t*)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/YlOrRd.png" width="100%" height="40" alt="YlOrRd">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “YlOrRd” sequential color scheme.
+Given a number *t* in the range [0,1], returns the corresponding color from the “YlOrRd” sequential color scheme represented as an RGB string.
