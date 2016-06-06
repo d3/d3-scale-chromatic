@@ -18,7 +18,7 @@ If you use NPM, `npm install d3-scale-chromatic`. Otherwise, download the [lates
 <script src="https://d3js.org/d3-scale-chromatic.v0.1.min.js"></script>
 <script>
 
-var ylGn5 = d3_scale_chromatic.scaleYlGn();
+var ylGn = d3_scale_chromatic.scaleYlGn();
 
 </script>
 ```
