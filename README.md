@@ -1,6 +1,6 @@
 # d3-scale-chromatic
 
-Ordinal and sequential color scales derived from Cynthia A. Brewer’s [ColorBrewer](http://colorbrewer2.org) color schemes.
+Sequential, diverging and categorical color scales from Cynthia A. Brewer’s [ColorBrewer](http://colorbrewer2.org) color schemes.
 
 ## Installing
 
