@@ -1,11 +1,8 @@
-import scheme from "../scheme";
+import {scaleOrdinal} from "d3-scale";
+import colors from "../colors";
 
-export default scheme([
-  "fbb4aeb3cde3ccebc5",
-  "fbb4aeb3cde3ccebc5decbe4",
-  "fbb4aeb3cde3ccebc5decbe4fed9a6",
-  "fbb4aeb3cde3ccebc5decbe4fed9a6ffffcc",
-  "fbb4aeb3cde3ccebc5decbe4fed9a6ffffcce5d8bd",
-  "fbb4aeb3cde3ccebc5decbe4fed9a6ffffcce5d8bdfddaec",
-  "fbb4aeb3cde3ccebc5decbe4fed9a6ffffcce5d8bdfddaecf2f2f2"
-]);
+var colorsPastel1 = colors("fbb4aeb3cde3ccebc5decbe4fed9a6ffffcce5d8bdfddaecf2f2f2");
+
+export default function() {
+  return scaleOrdinal().range(colorsPastel1);
+}

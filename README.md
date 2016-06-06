@@ -1,17 +1,24 @@
 # d3-scale-chromatic
 
-Color schemes from [ColorBrewer](http://colorbrewer2.org) by Cynthia A. Brewer. These color schemes are intended for use with [d3.scaleOrdinal](https://github.com/d3/d3-scale/blob/master/README.md#ordinal-scales), [d3.scaleQuantize](https://github.com/d3/d3-scale/blob/master/README.md#quantize-scales) or [d3.scaleQuantile](https://github.com/d3/d3-scale/blob/master/README.md#quantile-scales), but each scheme is simply an array of hexadecimal RGB color strings, so use them however you like!
+Ordinal and sequential color scales derived from Cynthia A. Brewer’s [ColorBrewer](http://colorbrewer2.org) color schemes.
 
 ## Installing
 
-If you use NPM, `npm install d3-scale-chromatic`. Otherwise, download the [latest release](https://github.com/d3/d3-scale-chromatic/releases/latest). You can also load directly from [d3js.org](https://d3js.org), either as a [standalone library](https://d3js.org/d3-scale-chromatic.v0.0.min.js) or as part of [D3 4.0](https://github.com/d3/d3). AMD, CommonJS, and vanilla environments are supported. In vanilla, a `d3_scale_chromatic` global is exported:
+If you use NPM, `npm install d3-scale-chromatic`. Otherwise, download the [latest release](https://github.com/d3/d3-scale-chromatic/releases/latest). You can also load directly from [d3js.org](https://d3js.org), either as a [standalone library](https://d3js.org/d3-scale-chromatic.v0.1.min.js) or as part of [D3 4.0](https://github.com/d3/d3). AMD, CommonJS, and vanilla environments are supported. In vanilla, a `d3_scale_chromatic` global is exported:
 
 ```html
-<script src="https://d3js.org/d3.v4.0.0-alpha.44.min.js"></script>
-<script src="https://d3js.org/d3-scale-chromatic.v0.0.min.js"></script>
+<script src="https://d3js.org/d3-array.v0.7.min.js"></script>
+<script src="https://d3js.org/d3-collection.v0.2.min.js"></script>
+<script src="https://d3js.org/d3-color.v0.4.min.js"></script>
+<script src="https://d3js.org/d3-format.v0.5.min.js"></script>
+<script src="https://d3js.org/d3-interpolate.v0.8.min.js"></script>
+<script src="https://d3js.org/d3-time.v0.2.min.js"></script>
+<script src="https://d3js.org/d3-time-format.v0.3.min.js"></script>
+<script src="https://d3js.org/d3-scale.v0.7.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v0.1.min.js"></script>
 <script>
 
-var ylGn5 = d3.scaleOrdinal().range(d3_scale_chromatic.schemeYlGn(5));
+var ylGn5 = d3_scale_chromatic.scaleYlGn();
 
 </script>
 ```
@@ -22,218 +29,218 @@ var ylGn5 = d3.scaleOrdinal().range(d3_scale_chromatic.schemeYlGn(5));
 
 ### Categorical
 
-<a href="#schemeAccent" name="schemeAccent">#</a> d3.<b>schemeAccent</b>(<i>n</i>)
+<a href="#scaleAccent" name="scaleAccent">#</a> d3.<b>scaleAccent</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/accent.png" width="100%" height="40" alt="Accent">
 
-Returns the Accent color scheme with *n* colors; *n* must be in the range [3,8].
+Constructs a new [ordinal scale](https://github.com/d3/d3-scale#ordinal-scales) with a range of eight categorical colors.
 
-<a href="#schemeDark2" name="schemeDark2">#</a> d3.<b>schemeDark2</b>(<i>n</i>)
+<a href="#scaleDark2" name="scaleDark2">#</a> d3.<b>scaleDark2</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/dark2.png" width="100%" height="40" alt="Dark2">
 
-Returns the Dark2 color scheme with *n* colors; *n* must be in the range [3,8].
+Constructs a new [ordinal scale](https://github.com/d3/d3-scale#ordinal-scales) with a range of eight categorical colors.
 
-<a href="#schemePaired" name="schemePaired">#</a> d3.<b>schemePaired</b>(<i>n</i>)
+<a href="#scalePaired" name="scalePaired">#</a> d3.<b>scalePaired</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/paired.png" width="100%" height="40" alt="Paired">
 
-Returns the Paired color scheme with *n* colors; *n* must be in the range [3,12].
+Constructs a new [ordinal scale](https://github.com/d3/d3-scale#ordinal-scales) with a range of twelve categorical colors.
 
-<a href="#schemePastel1" name="schemePastel1">#</a> d3.<b>schemePastel1</b>(<i>n</i>)
+<a href="#scalePastel1" name="scalePastel1">#</a> d3.<b>scalePastel1</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pastel1.png" width="100%" height="40" alt="Pastel1">
 
-Returns the Pastel1 color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [ordinal scale](https://github.com/d3/d3-scale#ordinal-scales) with a range of nine categorical colors.
 
-<a href="#schemePastel2" name="schemePastel2">#</a> d3.<b>schemePastel2</b>(<i>n</i>)
+<a href="#scalePastel2" name="scalePastel2">#</a> d3.<b>scalePastel2</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pastel2.png" width="100%" height="40" alt="Pastel2">
 
-Returns the Pastel2 color scheme with *n* colors; *n* must be in the range [3,8].
+Constructs a new [ordinal scale](https://github.com/d3/d3-scale#ordinal-scales) with a range of eight categorical colors.
 
-<a href="#schemeSet1" name="schemeSet1">#</a> d3.<b>schemeSet1</b>(<i>n</i>)
+<a href="#scaleSet1" name="scaleSet1">#</a> d3.<b>scaleSet1</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/set1.png" width="100%" height="40" alt="Set1">
 
-Returns the Set1 color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [ordinal scale](https://github.com/d3/d3-scale#ordinal-scales) with a range of nine categorical colors.
 
-<a href="#schemeSet2" name="schemeSet2">#</a> d3.<b>schemeSet2</b>(<i>n</i>)
+<a href="#scaleSet2" name="scaleSet2">#</a> d3.<b>scaleSet2</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/set2.png" width="100%" height="40" alt="Set2">
 
-Returns the Set2 color scheme with *n* colors; *n* must be in the range [3,8].
+Constructs a new [ordinal scale](https://github.com/d3/d3-scale#ordinal-scales) with a range of eight categorical colors.
 
-<a href="#schemeSet3" name="schemeSet3">#</a> d3.<b>schemeSet3</b>(<i>n</i>)
+<a href="#scaleSet3" name="scaleSet3">#</a> d3.<b>scaleSet3</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/set3.png" width="100%" height="40" alt="Set3">
 
-Returns the Set3 color scheme with *n* colors; *n* must be in the range [3,12].
+Constructs a new [ordinal scale](https://github.com/d3/d3-scale#ordinal-scales) with a range of twelve categorical colors.
 
 ### Diverging
 
-<a href="#schemeBrBG" name="schemeBrBG">#</a> d3.<b>schemeBrBG</b>(<i>n</i>)
+<a href="#scaleBrBG" name="scaleBrBG">#</a> d3.<b>scaleBrBG</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/br-b-g.png" width="100%" height="40" alt="BrBG">
 
-Returns the BrBG color scheme with *n* colors; *n* must be in the range [3,11].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “BrBG” diverging color scheme.
 
-<a href="#schemePRGn" name="schemePRGn">#</a> d3.<b>schemePRGn</b>(<i>n</i>)
+<a href="#scalePRGn" name="scalePRGn">#</a> d3.<b>scalePRGn</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/p-r-gn.png" width="100%" height="40" alt="PRGn">
 
-Returns the PRGn color scheme with *n* colors; *n* must be in the range [3,11].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “PRGn” diverging color scheme.
 
-<a href="#schemePiYG" name="schemePiYG">#</a> d3.<b>schemePiYG</b>(<i>n</i>)
+<a href="#scalePiYG" name="scalePiYG">#</a> d3.<b>scalePiYG</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pi-y-g.png" width="100%" height="40" alt="PiYG">
 
-Returns the PiYG color scheme with *n* colors; *n* must be in the range [3,11].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “PiYG” diverging color scheme.
 
-<a href="#schemePuOr" name="schemePuOr">#</a> d3.<b>schemePuOr</b>(<i>n</i>)
+<a href="#scalePuOr" name="scalePuOr">#</a> d3.<b>scalePuOr</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pu-or.png" width="100%" height="40" alt="PuOr">
 
-Returns the PuOr color scheme with *n* colors; *n* must be in the range [3,11].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “PuOr” diverging color scheme.
 
-<a href="#schemeRdBu" name="schemeRdBu">#</a> d3.<b>schemeRdBu</b>(<i>n</i>)
+<a href="#scaleRdBu" name="scaleRdBu">#</a> d3.<b>scaleRdBu</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/rd-bu.png" width="100%" height="40" alt="RdBu">
 
-Returns the RdBu color scheme with *n* colors; *n* must be in the range [3,11].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “RdBu” diverging color scheme.
 
-<a href="#schemeRdGy" name="schemeRdGy">#</a> d3.<b>schemeRdGy</b>(<i>n</i>)
+<a href="#scaleRdGy" name="scaleRdGy">#</a> d3.<b>scaleRdGy</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/rd-gy.png" width="100%" height="40" alt="RdGy">
 
-Returns the RdGy color scheme with *n* colors; *n* must be in the range [3,11].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “RdGy” diverging color scheme.
 
-<a href="#schemeRdYlBu" name="schemeRdYlBu">#</a> d3.<b>schemeRdYlBu</b>(<i>n</i>)
+<a href="#scaleRdYlBu" name="scaleRdYlBu">#</a> d3.<b>scaleRdYlBu</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/rd-yl-bu.png" width="100%" height="40" alt="RdYlBu">
 
-Returns the RdYlBu color scheme with *n* colors; *n* must be in the range [3,11].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “RdYlBu” diverging color scheme.
 
-<a href="#schemeRdYlGn" name="schemeRdYlGn">#</a> d3.<b>schemeRdYlGn</b>(<i>n</i>)
+<a href="#scaleRdYlGn" name="scaleRdYlGn">#</a> d3.<b>scaleRdYlGn</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/rd-yl-gn.png" width="100%" height="40" alt="RdYlGn">
 
-Returns the RdYlGn color scheme with *n* colors; *n* must be in the range [3,11].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “RdYlGn” diverging color scheme.
 
-<a href="#schemeSpectral" name="schemeSpectral">#</a> d3.<b>schemeSpectral</b>(<i>n</i>)
+<a href="#scaleSpectral" name="scaleSpectral">#</a> d3.<b>scaleSpectral</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/spectral.png" width="100%" height="40" alt="Spectral">
 
-Returns the Spectral color scheme with *n* colors; *n* must be in the range [3,11].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “Spectral” diverging color scheme.
 
 ### Sequential (Single Hue)
 
-<a href="#schemeBlues" name="schemeBlues">#</a> d3.<b>schemeBlues</b>(<i>n</i>)
+<a href="#scaleBlues" name="scaleBlues">#</a> d3.<b>scaleBlues</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/blues.png" width="100%" height="40" alt="Blues">
 
-Returns the Blues color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “Blues” sequential color scheme.
 
-<a href="#schemeGreens" name="schemeGreens">#</a> d3.<b>schemeGreens</b>(<i>n</i>)
+<a href="#scaleGreens" name="scaleGreens">#</a> d3.<b>scaleGreens</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/greens.png" width="100%" height="40" alt="Greens">
 
-Returns the Greens color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “Greens” sequential color scheme.
 
-<a href="#schemeGreys" name="schemeGreys">#</a> d3.<b>schemeGreys</b>(<i>n</i>)
+<a href="#scaleGreys" name="scaleGreys">#</a> d3.<b>scaleGreys</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/greys.png" width="100%" height="40" alt="Greys">
 
-Returns the Greys color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “Greys” sequential color scheme.
 
-<a href="#schemeOranges" name="schemeOranges">#</a> d3.<b>schemeOranges</b>(<i>n</i>)
+<a href="#scaleOranges" name="scaleOranges">#</a> d3.<b>scaleOranges</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/oranges.png" width="100%" height="40" alt="Oranges">
 
-Returns the Oranges color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “Oranges” sequential color scheme.
 
-<a href="#schemePurples" name="schemePurples">#</a> d3.<b>schemePurples</b>(<i>n</i>)
+<a href="#scalePurples" name="scalePurples">#</a> d3.<b>scalePurples</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/purples.png" width="100%" height="40" alt="Purples">
 
-Returns the Purples color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “Purples” sequential color scheme.
 
-<a href="#schemeReds" name="schemeReds">#</a> d3.<b>schemeReds</b>(<i>n</i>)
+<a href="#scaleReds" name="scaleReds">#</a> d3.<b>scaleReds</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/reds.png" width="100%" height="40" alt="Reds">
 
-Returns the Reds color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “Reds” sequential color scheme.
 
 ### Sequential (Multi-Hue)
 
-<a href="#schemeBuGn" name="schemeBuGn">#</a> d3.<b>schemeBuGn</b>(<i>n</i>)
+<a href="#scaleBuGn" name="scaleBuGn">#</a> d3.<b>scaleBuGn</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/bu-gn.png" width="100%" height="40" alt="Reds">
 
-Returns the BuGn color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “BuGn” sequential color scheme.
 
-<a href="#schemeBuPu" name="schemeBuPu">#</a> d3.<b>schemeBuPu</b>(<i>n</i>)
+<a href="#scaleBuPu" name="scaleBuPu">#</a> d3.<b>scaleBuPu</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/bu-pu.png" width="100%" height="40" alt="Reds">
 
-Returns the BuPu color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “BuPu” sequential color scheme.
 
-<a href="#schemeGnBu" name="schemeGnBu">#</a> d3.<b>schemeGnBu</b>(<i>n</i>)
+<a href="#scaleGnBu" name="scaleGnBu">#</a> d3.<b>scaleGnBu</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/gn-bu.png" width="100%" height="40" alt="Reds">
 
-Returns the GnBu color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “GnBu” sequential color scheme.
 
-<a href="#schemeOrRd" name="schemeOrRd">#</a> d3.<b>schemeOrRd</b>(<i>n</i>)
+<a href="#scaleOrRd" name="scaleOrRd">#</a> d3.<b>scaleOrRd</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/or-rd.png" width="100%" height="40" alt="Reds">
 
-Returns the OrRd color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “OrRd” sequential color scheme.
 
-<a href="#schemePuBuGn" name="schemePuBuGn">#</a> d3.<b>schemePuBuGn</b>(<i>n</i>)
+<a href="#scalePuBuGn" name="scalePuBuGn">#</a> d3.<b>scalePuBuGn</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pu-bu-gn.png" width="100%" height="40" alt="Reds">
 
-Returns the PuBuGn color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “PuBuGn” sequential color scheme.
 
-<a href="#schemePuBu" name="schemePuBu">#</a> d3.<b>schemePuBu</b>(<i>n</i>)
+<a href="#scalePuBu" name="scalePuBu">#</a> d3.<b>scalePuBu</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pu-bu.png" width="100%" height="40" alt="Reds">
 
-Returns the PuBu color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “PuBu” sequential color scheme.
 
-<a href="#schemePuRd" name="schemePuRd">#</a> d3.<b>schemePuRd</b>(<i>n</i>)
+<a href="#scalePuRd" name="scalePuRd">#</a> d3.<b>scalePuRd</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/pu-rd.png" width="100%" height="40" alt="Reds">
 
-Returns the PuRd color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “PuRd” sequential color scheme.
 
-<a href="#schemeRdPu" name="schemeRdPu">#</a> d3.<b>schemeRdPu</b>(<i>n</i>)
+<a href="#scaleRdPu" name="scaleRdPu">#</a> d3.<b>scaleRdPu</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/rd-pu.png" width="100%" height="40" alt="Reds">
 
-Returns the RdPu color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “RdPu” sequential color scheme.
 
-<a href="#schemeYlGnBu" name="schemeYlGnBu">#</a> d3.<b>schemeYlGnBu</b>(<i>n</i>)
+<a href="#scaleYlGnBu" name="scaleYlGnBu">#</a> d3.<b>scaleYlGnBu</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/yl-gn-bu.png" width="100%" height="40" alt="Reds">
 
-Returns the YlGnBu color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “YlGnBu” sequential color scheme.
 
-<a href="#schemeYlGn" name="schemeYlGn">#</a> d3.<b>schemeYlGn</b>(<i>n</i>)
+<a href="#scaleYlGn" name="scaleYlGn">#</a> d3.<b>scaleYlGn</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/yl-gn.png" width="100%" height="40" alt="Reds">
 
-Returns the YlGn color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “YlGn” sequential color scheme.
 
-<a href="#schemeYlOrBr" name="schemeYlOrBr">#</a> d3.<b>schemeYlOrBr</b>(<i>n</i>)
+<a href="#scaleYlOrBr" name="scaleYlOrBr">#</a> d3.<b>scaleYlOrBr</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/yl-or-br.png" width="100%" height="40" alt="Reds">
 
-Returns the YlOrBr color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “YlOrBr” sequential color scheme.
 
-<a href="#schemeYlOrRd" name="schemeYlOrRd">#</a> d3.<b>schemeYlOrRd</b>(<i>n</i>)
+<a href="#scaleYlOrRd" name="scaleYlOrRd">#</a> d3.<b>scaleYlOrRd</b>(<i>n</i>)
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/yl-or-rd.png" width="100%" height="40" alt="Reds">
 
-Returns the YlOrRd color scheme with *n* colors; *n* must be in the range [3,9].
+Constructs a new [sequential scale](https://github.com/d3/d3-scale#sequential-scales) with the unit [domain](https://github.com/d3/d3-scale#continuous_domain) [0, 1] and the “YlOrRd” sequential color scheme.
