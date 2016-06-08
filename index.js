@@ -1,5 +1,3 @@
-export {version} from "./build/package";
-
 export {default as schemeAccent} from "./src/categorical/Accent";
 export {default as schemeDark2} from "./src/categorical/Dark2";
 export {default as schemePaired} from "./src/categorical/Paired";
