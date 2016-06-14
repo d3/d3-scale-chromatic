@@ -4,6 +4,7 @@
   "description": "Sequential, diverging and categorical color schemes from ColorBrewer.",
   "keywords": [
     "d3",
+    "d3-module",
     "color",
     "scale",
     "sequential",
