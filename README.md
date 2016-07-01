@@ -14,12 +14,12 @@ var color = d3.scaleSequential(d3.interpolatePiYG);
 
 ## Installing
 
-If you use NPM, `npm install d3-scale-chromatic`. Otherwise, download the [latest release](https://github.com/d3/d3-scale-chromatic/releases/latest). You can also load directly from [d3js.org](https://d3js.org) as a [standalone library](https://d3js.org/d3-scale-chromatic.v0.3.min.js). AMD, CommonJS, and vanilla environments are supported. In vanilla, a `d3` global is exported:
+If you use NPM, `npm install d3-scale-chromatic`. Otherwise, download the [latest release](https://github.com/d3/d3-scale-chromatic/releases/latest). You can also load directly from [d3js.org](https://d3js.org) as a [standalone library](https://d3js.org/d3-scale-chromatic.v1.min.js). AMD, CommonJS, and vanilla environments are supported. In vanilla, a `d3` global is exported:
 
 ```html
-<script src="https://d3js.org/d3-color.v0.5.min.js"></script>
-<script src="https://d3js.org/d3-interpolate.v0.9.min.js"></script>
-<script src="https://d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+<script src="https://d3js.org/d3-color.v1.min.js"></script>
+<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script>
 
 var yellow = d3.interpolateYlGn(0), // "rgb(255, 255, 229)"
