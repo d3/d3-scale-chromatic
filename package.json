@@ -17,6 +17,7 @@
     "url": "http://bost.ocks.org/mike"
   },
   "main": "build/d3-scale-chromatic.js",
+  "module": "index",
   "jsnext:main": "index",
   "repository": {
     "type": "git",
@@ -34,7 +35,7 @@
   "devDependencies": {
     "eslint": "2",
     "package-preamble": "0.0",
-    "rollup": "0.33",
+    "rollup": "0.34",
     "tape": "4",
     "uglify-js": "2"
   }
