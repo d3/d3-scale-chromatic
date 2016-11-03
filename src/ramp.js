@@ -1,6 +1,5 @@
 import {interpolateRgbBasis} from "d3-interpolate";
-import colors from "./colors";
 
-export default function(range) {
-  return interpolateRgbBasis(colors(range));
+export default function(scheme) {
+  return interpolateRgbBasis(scheme[scheme.length - 1]);
 }
