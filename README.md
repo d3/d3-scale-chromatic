@@ -1,6 +1,8 @@
 # d3-scale-chromatic
 
-This module provides sequential, diverging and categorical color schemes derived from Cynthia A. Brewer’s [ColorBrewer](http://colorbrewer2.org). Since ColorBrewer publishes only discrete color schemes, the sequential and diverging scales are interpolated using [uniform B-splines](http://bl.ocks.org/mbostock/048d21cf747371b11884f75ad896e5a5). These schemes and interpolators are designed to work with [d3-scale](https://github.com/d3/d3-scale)’s [d3.scaleOrdinal](https://github.com/d3/d3-scale#ordinal-scales) and [d3.scaleSequential](https://github.com/d3/d3-scale#sequential-scales). For example, to create a categorical color scale using the [Accent](#schemeAccent) color scheme:
+This module provides sequential, diverging and categorical color schemes derived from Cynthia A. Brewer’s [ColorBrewer](http://colorbrewer2.org). Since ColorBrewer publishes only discrete color schemes, the sequential and diverging scales are interpolated using [uniform B-splines](http://bl.ocks.org/mbostock/048d21cf747371b11884f75ad896e5a5). These schemes and interpolators are designed to work with [d3-scale](https://github.com/d3/d3-scale)’s [d3.scaleOrdinal](https://github.com/d3/d3-scale#ordinal-scales) and [d3.scaleSequential](https://github.com/d3/d3-scale#sequential-scales).
+
+For example, to create a categorical color scale using the [Accent](#schemeAccent) color scheme:
 
 ```js
 var accent = d3.scaleOrdinal(d3.schemeAccent);
