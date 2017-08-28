@@ -3,13 +3,19 @@
 This module provides sequential, diverging and categorical color schemes derived from Cynthia A. Brewer’s [ColorBrewer](http://colorbrewer2.org). Since ColorBrewer publishes only discrete color schemes, the sequential and diverging scales are interpolated using [uniform B-splines](http://bl.ocks.org/mbostock/048d21cf747371b11884f75ad896e5a5). These schemes and interpolators are designed to work with [d3-scale](https://github.com/d3/d3-scale)’s [d3.scaleOrdinal](https://github.com/d3/d3-scale#ordinal-scales) and [d3.scaleSequential](https://github.com/d3/d3-scale#sequential-scales). For example, to create a categorical color scale using the [Accent](#schemeAccent) color scheme:
 
 ```js
-var color = d3.scaleOrdinal(d3.schemeAccent);
+var accent = d3.scaleOrdinal(d3.schemeAccent);
 ```
 
-To create a diverging color scale using the [PiYG](#interpolatePiYG) color scheme:
+To create a sequential discrete nine-color scale using the [Blues](#schemeBlues) color scheme:
 
 ```js
-var color = d3.scaleSequential(d3.interpolatePiYG);
+var blues = d3.scaleOrdinal(d3.schemeBlues[9]);
+```
+
+To create a diverging, continuous color scale using the [PiYG](#interpolatePiYG) color scheme:
+
+```js
+var piyg = d3.scaleSequential(d3.interpolatePiYG);
 ```
 
 ## Installing
@@ -99,64 +105,66 @@ An array of twelve categorical colors represented as RGB hexadecimal strings.
 
 ### Diverging
 
+Diverging color schemes are available as continuous interpolators (often used with [d3.scaleSequential](https://github.com/d3/d3-scale/blob/master/README.md#sequential-scales)) and as discrete schemes (often used with [d3.scaleOrdinal](https://github.com/d3/d3-scale/blob/master/README.md#ordinal-scales)). Each discrete scheme, such as [d3.schemeBrBG](#schemeBrBG), is represented as an array of arrays of hexadecimal color strings. The *k*th element of this array contains the color scheme of size *k*; for example, `d3.schemeBrBG[9]` contains an array of nine strings representing the nine colors of the brown-blue-green diverging color scheme. Diverging color schemes support a size *k* ranging from 3 to 11.
+
 <a href="#interpolateBrBG" name="interpolateBrBG">#</a> d3.<b>interpolateBrBG</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/diverging/BrBG.js "Source")
-<br><a href="#schemeBrBG" name="schemeBrBG">#</a> d3.<b>schemeBrBG</b>
+<br><a href="#schemeBrBG" name="schemeBrBG">#</a> d3.<b>schemeBrBG</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/BrBG.png" width="100%" height="40" alt="BrBG">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “BrBG” diverging color scheme represented as an RGB string.
 
 <a href="#interpolatePRGn" name="interpolatePRGn">#</a> d3.<b>interpolatePRGn</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/diverging/PRGn.js "Source")
-<br><a href="#schemePRGn" name="schemePRGn">#</a> d3.<b>schemePRGn</b>
+<br><a href="#schemePRGn" name="schemePRGn">#</a> d3.<b>schemePRGn</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/PRGn.png" width="100%" height="40" alt="PRGn">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “PRGn” diverging color scheme represented as an RGB string.
 
 <a href="#interpolatePiYG" name="interpolatePiYG">#</a> d3.<b>interpolatePiYG</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/diverging/PiYG.js "Source")
-<br><a href="#schemePiYG" name="schemePiYG">#</a> d3.<b>schemePiYG</b>
+<br><a href="#schemePiYG" name="schemePiYG">#</a> d3.<b>schemePiYG</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/PiYG.png" width="100%" height="40" alt="PiYG">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “PiYG” diverging color scheme represented as an RGB string.
 
 <a href="#interpolatePuOr" name="interpolatePuOr">#</a> d3.<b>interpolatePuOr</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/diverging/PuOr.js "Source")
-<br><a href="#schemePuOr" name="schemePuOr">#</a> d3.<b>schemePuOr</b>
+<br><a href="#schemePuOr" name="schemePuOr">#</a> d3.<b>schemePuOr</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/PuOr.png" width="100%" height="40" alt="PuOr">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “PuOr” diverging color scheme represented as an RGB string.
 
 <a href="#interpolateRdBu" name="interpolateRdBu">#</a> d3.<b>interpolateRdBu</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/diverging/RdBu.js "Source")
-<br><a href="#schemeRdBu" name="schemeRdBu">#</a> d3.<b>schemeRdBu</b>
+<br><a href="#schemeRdBu" name="schemeRdBu">#</a> d3.<b>schemeRdBu</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/RdBu.png" width="100%" height="40" alt="RdBu">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “RdBu” diverging color scheme represented as an RGB string.
 
 <a href="#interpolateRdGy" name="interpolateRdGy">#</a> d3.<b>interpolateRdGy</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/diverging/RdGy.js "Source")
-<br><a href="#schemeRdGy" name="schemeRdGy">#</a> d3.<b>schemeRdGy</b>
+<br><a href="#schemeRdGy" name="schemeRdGy">#</a> d3.<b>schemeRdGy</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/RdGy.png" width="100%" height="40" alt="RdGy">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “RdGy” diverging color scheme represented as an RGB string.
 
 <a href="#interpolateRdYlBu" name="interpolateRdYlBu">#</a> d3.<b>interpolateRdYlBu</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/diverging/RdYlBu.js "Source")
-<br><a href="#schemeRdYlBu" name="schemeRdYlBu">#</a> d3.<b>schemeRdYlBu</b>
+<br><a href="#schemeRdYlBu" name="schemeRdYlBu">#</a> d3.<b>schemeRdYlBu</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/RdYlBu.png" width="100%" height="40" alt="RdYlBu">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “RdYlBu” diverging color scheme represented as an RGB string.
 
 <a href="#interpolateRdYlGn" name="interpolateRdYlGn">#</a> d3.<b>interpolateRdYlGn</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/diverging/RdYlGn.js "Source")
-<br><a href="#schemeRdYlGn" name="schemeRdYlGn">#</a> d3.<b>schemeRdYlGn</b>
+<br><a href="#schemeRdYlGn" name="schemeRdYlGn">#</a> d3.<b>schemeRdYlGn</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/RdYlGn.png" width="100%" height="40" alt="RdYlGn">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “RdYlGn” diverging color scheme represented as an RGB string.
 
 <a href="#interpolateSpectral" name="interpolateSpectral">#</a> d3.<b>interpolateSpectral</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/diverging/Spectral.js "Source")
-<br><a href="#schemeSpectral" name="schemeSpectral">#</a> d3.<b>schemeSpectral</b>
+<br><a href="#schemeSpectral" name="schemeSpectral">#</a> d3.<b>schemeSpectral</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Spectral.png" width="100%" height="40" alt="Spectral">
 
@@ -164,43 +172,45 @@ Given a number *t* in the range [0,1], returns the corresponding color from the 
 
 ### Sequential (Single Hue)
 
+Sequential, single-hue color schemes are available as continuous interpolators (often used with [d3.scaleSequential](https://github.com/d3/d3-scale/blob/master/README.md#sequential-scales)) and as discrete schemes (often used with [d3.scaleOrdinal](https://github.com/d3/d3-scale/blob/master/README.md#ordinal-scales)). Each discrete scheme, such as [d3.schemeBlues](#schemeBlues), is represented as an array of arrays of hexadecimal color strings. The *k*th element of this array contains the color scheme of size *k*; for example, `d3.schemeBlues[9]` contains an array of nine strings representing the nine colors of the blue sequential color scheme. Sequential, single-hue color schemes support a size *k* ranging from 3 to 9.
+
 <a href="#interpolateBlues" name="interpolateBlues">#</a> d3.<b>interpolateBlues</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-single/Blues.js "Source")
-<br><a href="#schemeBlues" name="schemeBlues">#</a> d3.<b>schemeBlues</b>
+<br><a href="#schemeBlues" name="schemeBlues">#</a> d3.<b>schemeBlues</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Blues.png" width="100%" height="40" alt="Blues">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “Blues” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateGreens" name="interpolateGreens">#</a> d3.<b>interpolateGreens</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-single/Greens.js "Source")
-<br><a href="#schemeGreens" name="schemeGreens">#</a> d3.<b>schemeGreens</b>
+<br><a href="#schemeGreens" name="schemeGreens">#</a> d3.<b>schemeGreens</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Greens.png" width="100%" height="40" alt="Greens">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “Greens” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateGreys" name="interpolateGreys">#</a> d3.<b>interpolateGreys</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-single/Greys.js "Source")
-<br><a href="#schemeGreys" name="schemeGreys">#</a> d3.<b>schemeGreys</b>
+<br><a href="#schemeGreys" name="schemeGreys">#</a> d3.<b>schemeGreys</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Greys.png" width="100%" height="40" alt="Greys">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “Greys” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateOranges" name="interpolateOranges">#</a> d3.<b>interpolateOranges</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-single/Oranges.js "Source")
-<br><a href="#schemeOranges" name="schemeOranges">#</a> d3.<b>schemeOranges</b>
+<br><a href="#schemeOranges" name="schemeOranges">#</a> d3.<b>schemeOranges</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Oranges.png" width="100%" height="40" alt="Oranges">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “Oranges” sequential color scheme represented as an RGB string.
 
 <a href="#interpolatePurples" name="interpolatePurples">#</a> d3.<b>interpolatePurples</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-single/Purples.js "Source")
-<br><a href="#schemePurples" name="schemePurples">#</a> d3.<b>schemePurples</b>
+<br><a href="#schemePurples" name="schemePurples">#</a> d3.<b>schemePurples</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Purples.png" width="100%" height="40" alt="Purples">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “Purples” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateReds" name="interpolateReds">#</a> d3.<b>interpolateReds</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-single/Reds.js "Source")
-<br><a href="#schemeReds" name="schemeReds">#</a> d3.<b>schemeReds</b>
+<br><a href="#schemeReds" name="schemeReds">#</a> d3.<b>schemeReds</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Reds.png" width="100%" height="40" alt="Reds">
 
@@ -208,85 +218,87 @@ Given a number *t* in the range [0,1], returns the corresponding color from the 
 
 ### Sequential (Multi-Hue)
 
+Sequential, multi-hue color schemes are available as continuous interpolators (often used with [d3.scaleSequential](https://github.com/d3/d3-scale/blob/master/README.md#sequential-scales)) and as discrete schemes (often used with [d3.scaleOrdinal](https://github.com/d3/d3-scale/blob/master/README.md#ordinal-scales)). Each discrete scheme, such as [d3.schemeBuGn](#schemeBuGn), is represented as an array of arrays of hexadecimal color strings. The *k*th element of this array contains the color scheme of size *k*; for example, `d3.schemeBuGn[9]` contains an array of nine strings representing the nine colors of the blue-green sequential color scheme. Sequential, multi-hue color schemes support a size *k* ranging from 3 to 9.
+
 <a href="#interpolateBuGn" name="interpolateBuGn">#</a> d3.<b>interpolateBuGn</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/BuGn.js "Source")
-<br><a href="#schemeBuGn" name="schemeBuGn">#</a> d3.<b>schemeBuGn</b>
+<br><a href="#schemeBuGn" name="schemeBuGn">#</a> d3.<b>schemeBuGn</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/BuGn.png" width="100%" height="40" alt="BuGn">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “BuGn” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateBuPu" name="interpolateBuPu">#</a> d3.<b>interpolateBuPu</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/BuPu.js "Source")
-<br><a href="#schemeBuPu" name="schemeBuPu">#</a> d3.<b>schemeBuPu</b>
+<br><a href="#schemeBuPu" name="schemeBuPu">#</a> d3.<b>schemeBuPu</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/BuPu.png" width="100%" height="40" alt="BuPu">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “BuPu” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateGnBu" name="interpolateGnBu">#</a> d3.<b>interpolateGnBu</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/GnBu.js "Source")
-<br><a href="#schemeGnBu" name="schemeGnBu">#</a> d3.<b>schemeGnBu</b>
+<br><a href="#schemeGnBu" name="schemeGnBu">#</a> d3.<b>schemeGnBu</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/GnBu.png" width="100%" height="40" alt="GnBu">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “GnBu” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateOrRd" name="interpolateOrRd">#</a> d3.<b>interpolateOrRd</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/OrRd.js "Source")
-<br><a href="#schemeOrRd" name="schemeOrRd">#</a> d3.<b>schemeOrRd</b>
+<br><a href="#schemeOrRd" name="schemeOrRd">#</a> d3.<b>schemeOrRd</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/OrRd.png" width="100%" height="40" alt="OrRd">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “OrRd” sequential color scheme represented as an RGB string.
 
 <a href="#interpolatePuBuGn" name="interpolatePuBuGn">#</a> d3.<b>interpolatePuBuGn</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/PuBuGn.js "Source")
-<br><a href="#schemePuBuGn" name="schemePuBuGn">#</a> d3.<b>schemePuBuGn</b>
+<br><a href="#schemePuBuGn" name="schemePuBuGn">#</a> d3.<b>schemePuBuGn</b>[*k*][*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/PuBuGn.png" width="100%" height="40" alt="PuBuGn">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “PuBuGn” sequential color scheme represented as an RGB string.
 
 <a href="#interpolatePuBu" name="interpolatePuBu">#</a> d3.<b>interpolatePuBu</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/PuBu.js "Source")
-<br><a href="#schemePuBu" name="schemePuBu">#</a> d3.<b>schemePuBu</b>
+<br><a href="#schemePuBu" name="schemePuBu">#</a> d3.<b>schemePuBu</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/PuBu.png" width="100%" height="40" alt="PuBu">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “PuBu” sequential color scheme represented as an RGB string.
 
 <a href="#interpolatePuRd" name="interpolatePuRd">#</a> d3.<b>interpolatePuRd</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/PuRd.js "Source")
-<br><a href="#schemePuRd" name="schemePuRd">#</a> d3.<b>schemePuRd</b>
+<br><a href="#schemePuRd" name="schemePuRd">#</a> d3.<b>schemePuRd</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/PuRd.png" width="100%" height="40" alt="PuRd">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “PuRd” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateRdPu" name="interpolateRdPu">#</a> d3.<b>interpolateRdPu</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/RdPu.js "Source")
-<br><a href="#schemeRdPu" name="schemeRdPu">#</a> d3.<b>schemeRdPu</b>
+<br><a href="#schemeRdPu" name="schemeRdPu">#</a> d3.<b>schemeRdPu</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/RdPu.png" width="100%" height="40" alt="RdPu">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “RdPu” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateYlGnBu" name="interpolateYlGnBu">#</a> d3.<b>interpolateYlGnBu</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/YlGnBu.js "Source")
-<br><a href="#schemeYlGnBu" name="schemeYlGnBu">#</a> d3.<b>schemeYlGnBu</b>
+<br><a href="#schemeYlGnBu" name="schemeYlGnBu">#</a> d3.<b>schemeYlGnBu</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/YlGnBu.png" width="100%" height="40" alt="YlGnBu">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “YlGnBu” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateYlGn" name="interpolateYlGn">#</a> d3.<b>interpolateYlGn</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/YlGn.js "Source")
-<br><a href="#schemeYlGn" name="schemeYlGn">#</a> d3.<b>schemeYlGn</b>
+<br><a href="#schemeYlGn" name="schemeYlGn">#</a> d3.<b>schemeYlGn</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/YlGn.png" width="100%" height="40" alt="YlGn">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “YlGn” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateYlOrBr" name="interpolateYlOrBr">#</a> d3.<b>interpolateYlOrBr</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/YlOrBr.js "Source")
-<br><a href="#schemeYlOrBr" name="schemeYlOrBr">#</a> d3.<b>schemeYlOrBr</b>
+<br><a href="#schemeYlOrBr" name="schemeYlOrBr">#</a> d3.<b>schemeYlOrBr</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/YlOrBr.png" width="100%" height="40" alt="YlOrBr">
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “YlOrBr” sequential color scheme represented as an RGB string.
 
 <a href="#interpolateYlOrRd" name="interpolateYlOrRd">#</a> d3.<b>interpolateYlOrRd</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/YlOrRd.js "Source")
-<br><a href="#schemeYlOrRd" name="schemeYlOrRd">#</a> d3.<b>schemeYlOrRd</b>
+<br><a href="#schemeYlOrRd" name="schemeYlOrRd">#</a> d3.<b>schemeYlOrRd</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/YlOrRd.png" width="100%" height="40" alt="YlOrRd">
 
