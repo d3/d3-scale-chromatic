@@ -1,3 +1,4 @@
+export {default as schemeCategory10} from "./src/categorical/category10";
 export {default as schemeAccent} from "./src/categorical/Accent";
 export {default as schemeDark2} from "./src/categorical/Dark2";
 export {default as schemePaired} from "./src/categorical/Paired";
@@ -33,3 +34,6 @@ export {default as interpolateGreys, scheme as schemeGreys} from "./src/sequenti
 export {default as interpolatePurples, scheme as schemePurples} from "./src/sequential-single/Purples";
 export {default as interpolateReds, scheme as schemeReds} from "./src/sequential-single/Reds";
 export {default as interpolateOranges, scheme as schemeOranges} from "./src/sequential-single/Oranges";
+export {default as interpolateCubehelixDefault} from "./src/sequential-multi/cubehelix";
+export {default as interpolateRainbow, warm as interpolateWarm, cool as interpolateCool} from "./src/sequential-multi/rainbow";
+export {default as interpolateViridis, magma as interpolateMagma, inferno as interpolateInferno, plasma as interpolatePlasma} from "./src/sequential-multi/viridis";

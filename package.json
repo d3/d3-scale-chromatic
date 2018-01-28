@@ -1,7 +1,7 @@
 {
   "name": "d3-scale-chromatic",
   "version": "1.1.1",
-  "description": "Sequential, diverging and categorical color schemes from ColorBrewer.",
+  "description": "Sequential, diverging and categorical color schemes.",
   "keywords": [
     "d3",
     "d3-module",
@@ -30,6 +30,7 @@
     "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git push --tags && cd ../d3.github.com && git pull && cp ../d3-scale-chromatic/dist/d3-scale-chromatic.js d3-scale-chromatic.v1.js && cp ../d3-scale-chromatic/dist/d3-scale-chromatic.min.js d3-scale-chromatic.v1.min.js && git add d3-scale-chromatic.v1.js d3-scale-chromatic.v1.min.js && git commit -m \"d3-scale-chromatic ${VERSION}\" && git push && cd - && zip -j dist/d3-scale-chromatic.zip -- LICENSE README.md dist/d3-scale-chromatic.js dist/d3-scale-chromatic.min.js"
   },
   "dependencies": {
+    "d3-color": "1",
     "d3-interpolate": "1"
   },
   "devDependencies": {
