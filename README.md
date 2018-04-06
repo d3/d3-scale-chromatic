@@ -299,7 +299,7 @@ Given a number *t* in the range [0,1], returns the corresponding color from the 
 Given a number *t* in the range [0,1], returns the corresponding color from the “OrRd” sequential color scheme represented as an RGB string.
 
 <a href="#interpolatePuBuGn" name="interpolatePuBuGn">#</a> d3.<b>interpolatePuBuGn</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/PuBuGn.js "Source")
-<br><a href="#schemePuBuGn" name="schemePuBuGn">#</a> d3.<b>schemePuBuGn</b>[*k*][*k*]
+<br><a href="#schemePuBuGn" name="schemePuBuGn">#</a> d3.<b>schemePuBuGn</b>[*k*]
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/PuBuGn.png" width="100%" height="40" alt="PuBuGn">
 
