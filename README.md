@@ -37,11 +37,10 @@ var yellow = d3.interpolateYlGn(0), // "rgb(255, 255, 229)"
 </script>
 ```
 
-Or, in combination with the [D3 default bundle](https://github.com/d3/d3):
+Or, as part of the [D3 default bundle](https://github.com/d3/d3):
 
 ```html
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
 <script>
 
 var yellow = d3.interpolateYlGn(0), // "rgb(255, 255, 229)"
