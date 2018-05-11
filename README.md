@@ -365,4 +365,4 @@ Given a number *t* in the range [0,1], returns the corresponding color from [d3.
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/sinebow.png" width="100%" height="40" alt="sinebow">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the [“sinebow”](http://basecase.org/env/on-rainbows) color scheme by [Charlie Loyd](http://basecase.org/env/on-rainbows) and [Jim Bumgardner](https://krazydad.com/tutorials/makecolors.php).
+Given a number *t* in the range [0,1], returns the corresponding color from the “sinebow” color scheme by [Jim Bumgardner](https://krazydad.com/tutorials/makecolors.php) and [Charlie Loyd](http://basecase.org/env/on-rainbows).
