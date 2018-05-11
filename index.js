@@ -36,4 +36,5 @@ export {default as interpolateReds, scheme as schemeReds} from "./src/sequential
 export {default as interpolateOranges, scheme as schemeOranges} from "./src/sequential-single/Oranges";
 export {default as interpolateCubehelixDefault} from "./src/sequential-multi/cubehelix";
 export {default as interpolateRainbow, warm as interpolateWarm, cool as interpolateCool} from "./src/sequential-multi/rainbow";
+export {default as interpolateSinebow} from "./src/sequential-multi/sinebow";
 export {default as interpolateViridis, magma as interpolateMagma, inferno as interpolateInferno, plasma as interpolatePlasma} from "./src/sequential-multi/viridis";

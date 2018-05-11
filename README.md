@@ -360,3 +360,9 @@ Given a number *t* in the range [0,1], returns the corresponding color from the 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/rainbow.png" width="100%" height="40" alt="rainbow">
 
 Given a number *t* in the range [0,1], returns the corresponding color from [d3.interpolateWarm](#interpolateWarm) scale from [0.0, 0.5] followed by the [d3.interpolateCool](#interpolateCool) scale from [0.5, 1.0], thus implementing the cyclical [less-angry rainbow](http://bl.ocks.org/mbostock/310c99e53880faec2434) color scheme.
+
+<a name="interpolateSinebow" href="#interpolateSinebow">#</a> d3.<b>interpolateSinebow</b>(<i>t</i>) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/sinebow.js "Source")
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/sinebow.png" width="100%" height="40" alt="sinebow">
+
+Given a number *t* in the range [0,1], returns the corresponding color from the [“sinebow”](http://basecase.org/env/on-rainbows) color scheme by [Charlie Loyd](http://basecase.org/env/on-rainbows) and [Jim Bumgardner](https://krazydad.com/tutorials/makecolors.php).
