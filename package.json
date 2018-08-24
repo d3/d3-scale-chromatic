@@ -1,6 +1,6 @@
 {
   "name": "d3-scale-chromatic",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Sequential, diverging and categorical color schemes.",
   "keywords": [
     "d3",
