@@ -114,7 +114,7 @@ An array of twelve categorical colors represented as RGB hexadecimal strings.
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Tableau10.png" width="100%" height="40" alt="Tableau10">
 
-An array of ten categorical colors from [Tableau 10](https://www.tableau.com/about/blog/2016/7/colors-upgrade-tableau-10-56782) represented as RGB hexadecimal strings.
+An array of ten categorical colors authored by Tableau as part of [Tableau 10](https://www.tableau.com/about/blog/2016/7/colors-upgrade-tableau-10-56782) represented as RGB hexadecimal strings.
 
 ### Diverging
 
