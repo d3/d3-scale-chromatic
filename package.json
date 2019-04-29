@@ -24,6 +24,7 @@
     "type": "git",
     "url": "https://github.com/d3/d3-scale-chromatic.git"
   },
+  "sideEffects": false,
   "scripts": {
     "pretest": "rollup -c",
     "test": "tape 'test/**/*-test.js' && eslint src",
