@@ -28,6 +28,7 @@
     "dist/**/*.js",
     "src/**/*.js"
   ],
+  "sideEffects": false,
   "scripts": {
     "pretest": "rollup -c",
     "test": "tape 'test/**/*-test.js' && eslint src",
