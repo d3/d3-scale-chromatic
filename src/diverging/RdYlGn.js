@@ -1,5 +1,5 @@
-import colors from "../colors";
-import ramp from "../ramp";
+import colors from "../colors.js";
+import ramp from "../ramp.js";
 
 export var scheme = new Array(3).concat(
   "fc8d59ffffbf91cf60",

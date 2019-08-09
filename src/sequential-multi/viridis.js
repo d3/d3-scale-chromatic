@@ -1,4 +1,4 @@
-import colors from "../colors";
+import colors from "../colors.js";
 
 function ramp(range) {
   var n = range.length;
