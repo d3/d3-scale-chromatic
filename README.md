@@ -50,7 +50,7 @@ var yellow = d3.interpolateYlGn(0), // "rgb(255, 255, 229)"
 </script>
 ```
 
-[Try d3-scale-chromatic in your browser.](https://tonicdev.com/npm/d3-scale-chromatic)
+[Try d3-scale-chromatic in your browser.](https://observablehq.com/collection/@d3/d3-scale-chromatic)
 
 ## API Reference
 
