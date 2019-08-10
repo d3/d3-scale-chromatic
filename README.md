@@ -110,6 +110,12 @@ An array of eight categorical colors represented as RGB hexadecimal strings.
 
 An array of twelve categorical colors represented as RGB hexadecimal strings.
 
+<a href="#schemeTableau10" name="schemeTableau10">#</a> d3.<b>schemeTableau10</b> [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/categorical/Tableau10.js "Source")
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Tableau10.png" width="100%" height="40" alt="Tableau10">
+
+An array of ten categorical colors authored by Tableau as part of [Tableau 10](https://www.tableau.com/about/blog/2016/7/colors-upgrade-tableau-10-56782) represented as RGB hexadecimal strings.
+
 ### Diverging
 
 Diverging color schemes are available as continuous interpolators (often used with [d3.scaleSequential](https://github.com/d3/d3-scale/blob/master/README.md#sequential-scales)) and as discrete schemes (often used with [d3.scaleOrdinal](https://github.com/d3/d3-scale/blob/master/README.md#ordinal-scales)). Each discrete scheme, such as [d3.schemeBrBG](#schemeBrBG), is represented as an array of arrays of hexadecimal color strings. The *k*th element of this array contains the color scheme of size *k*; for example, `d3.schemeBrBG[9]` contains an array of nine strings representing the nine colors of the brown-blue-green diverging color scheme. Diverging color schemes support a size *k* ranging from 3 to 11.

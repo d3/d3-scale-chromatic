@@ -71,6 +71,7 @@ tape("exports the expected schemes", function(test) {
     "schemeSet2",
     "schemeSet3",
     "schemeSpectral",
+    "schemeTableau10",
     "schemeYlGn",
     "schemeYlGnBu",
     "schemeYlOrBr",

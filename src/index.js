@@ -7,6 +7,7 @@ export {default as schemePastel2} from "./categorical/Pastel2.js";
 export {default as schemeSet1} from "./categorical/Set1.js";
 export {default as schemeSet2} from "./categorical/Set2.js";
 export {default as schemeSet3} from "./categorical/Set3.js";
+export {default as schemeTableau10} from "./categorical/Tableau10.js";
 export {default as interpolateBrBG, scheme as schemeBrBG} from "./diverging/BrBG.js";
 export {default as interpolatePRGn, scheme as schemePRGn} from "./diverging/PRGn.js";
 export {default as interpolatePiYG, scheme as schemePiYG} from "./diverging/PiYG.js";
