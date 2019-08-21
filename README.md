@@ -263,6 +263,12 @@ Given a number *t* in the range [0,1], returns the corresponding color from the 
 
 Given a number *t* in the range [0,1], returns the corresponding color from the “plasma” perceptually-uniform color scheme designed by [van der Walt and Smith](https://bids.github.io/colormap/) for matplotlib, represented as an RGB string.
 
+<a name="interpolateCividis" href="#interpolateCividis">#</a> d3.<b>interpolateCividis</b>(<i>t</i>) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/cividis.js "Source")
+
+<img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/cividis.png" width="100%" height="40" alt="cividis">
+
+Given a number *t* in the range [0,1], returns the corresponding color from the “cividis” color vision deficiency-optimized color scheme designed by [Nuñez, Anderton, and Renslow](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0199239), represented as an RGB string.
+
 <a name="interpolateWarm" href="#interpolateWarm">#</a> d3.<b>interpolateWarm</b>(<i>t</i>) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/rainbow.js "Source")
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/warm.png" width="100%" height="40" alt="warm">

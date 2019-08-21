@@ -35,6 +35,7 @@ export {default as interpolateGreys, scheme as schemeGreys} from "./sequential-s
 export {default as interpolatePurples, scheme as schemePurples} from "./sequential-single/Purples.js";
 export {default as interpolateReds, scheme as schemeReds} from "./sequential-single/Reds.js";
 export {default as interpolateOranges, scheme as schemeOranges} from "./sequential-single/Oranges.js";
+export {default as interpolateCividis} from "./sequential-multi/cividis.js";
 export {default as interpolateCubehelixDefault} from "./sequential-multi/cubehelix.js";
 export {default as interpolateRainbow, warm as interpolateWarm, cool as interpolateCool} from "./sequential-multi/rainbow.js";
 export {default as interpolateSinebow} from "./sequential-multi/sinebow.js";
