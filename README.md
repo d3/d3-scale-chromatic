@@ -237,7 +237,7 @@ Sequential, multi-hue color schemes are available as continuous interpolators (o
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/turbo.png" width="100%" height="40" alt="turbo">
 
-Given a number *t* in the range [0,1], returns the corresponding color from the “turbo” color scheme by [Google AI](https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html).
+Given a number *t* in the range [0,1], returns the corresponding color from the “turbo” color scheme by [Anton Mikhailov](https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html).
 
 <a name="interpolateViridis" href="#interpolateViridis">#</a> d3.<b>interpolateViridis</b>(<i>t</i>) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/viridis.js "Source")
 
