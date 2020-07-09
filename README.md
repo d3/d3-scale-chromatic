@@ -285,7 +285,7 @@ Given a number *t* in the range [0,1], returns the corresponding color from [Nic
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/cubehelix.png" width="100%" height="40" alt="cubehelix">
 
-Given a number *t* in the range [0,1], returns the corresponding color from [Green’s default Cubehelix](https://www.mrao.cam.ac.uk/~dag/CUBEHELIX/) represented as an RGB string.
+Given a number *t* in the range [0,1], returns the corresponding color from [Green’s default Cubehelix](http://www.mrao.cam.ac.uk/~dag/CUBEHELIX/) represented as an RGB string.
 
 <a href="#interpolateBuGn" name="interpolateBuGn">#</a> d3.<b>interpolateBuGn</b>(*t*) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/BuGn.js "Source")
 <br><a href="#schemeBuGn" name="schemeBuGn">#</a> d3.<b>schemeBuGn</b>[*k*]
