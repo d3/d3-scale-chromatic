@@ -169,17 +169,17 @@ cross-spawn@^6.0.5:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-d3-color@>=2.0.0-rc.1:
-  version "2.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-2.0.0-rc.1.tgz#306e5424d97d7c392fbb5f4e2f71a19692b625d1"
-  integrity sha512-qG47cofgHAELBblsjxvnloC3EQ0wu33aqZ5DdV8wljDKJEcY1eTX6WrIstIG6y93hJvaVFCzQmglNXt6B6bqBA==
+"d3-color@1 - 2":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-2.0.0.tgz#8d625cab42ed9b8f601a1760a389f7ea9189d62e"
+  integrity sha512-SPXi0TSKPD4g9tw0NMZFnR95XVgUZiBH+uUTqQuDu1OsE2zomHU7ho0FISciaPvosimixwHFl3WHLGabv6dDgQ==
 
-d3-interpolate@>=2.0.0-rc.1:
-  version "2.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/d3-interpolate/-/d3-interpolate-2.0.0-rc.1.tgz#894989e6051c8fef5632be1a67d6734b4974b3e8"
-  integrity sha512-QJ7SdIqRvHada4WDkeCosJbn56ssRCs0QyPQhOZnlgpD3aNw14zssGrwF14E4ZCgrZgDf8J6mXXLAcyFnFhX7A==
+"d3-interpolate@1 - 2":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/d3-interpolate/-/d3-interpolate-2.0.1.tgz#98be499cfb8a3b94d4ff616900501a64abc91163"
+  integrity sha512-c5UhwwTs/yybcmTpAVqwSFl6vrQ8JZJoT5F7xNFK9pymv5C0Ymcc9/LIJHtYIggg/yS9YHw8i8O8tgb9pupjeQ==
   dependencies:
-    d3-color ">=2.0.0-rc.1"
+    d3-color "1 - 2"
 
 debug@^4.0.1:
   version "4.1.1"
