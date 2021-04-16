@@ -34,6 +34,7 @@ tape("exports the expected schemes", function(test) {
     "interpolateReds",
     "interpolateSinebow",
     "interpolateSpectral",
+    "interpolateStdGammaII",
     "interpolateTurbo",
     "interpolateViridis",
     "interpolateWarm",
