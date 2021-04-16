@@ -37,7 +37,8 @@
   },
   "dependencies": {
     "d3-color": "1 - 2",
-    "d3-interpolate": "1 - 2"
+    "d3-interpolate": "1 - 2",
+    "d3-scale": "3"
   },
   "devDependencies": {
     "eslint": "6",

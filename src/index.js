@@ -39,5 +39,6 @@ export {default as interpolateCividis} from "./sequential-multi/cividis.js";
 export {default as interpolateCubehelixDefault} from "./sequential-multi/cubehelix.js";
 export {default as interpolateRainbow, warm as interpolateWarm, cool as interpolateCool} from "./sequential-multi/rainbow.js";
 export {default as interpolateSinebow} from "./sequential-multi/sinebow.js";
+export {default as interpolateStdGammaII} from "./sequential-multi/stdGammaII.js";
 export {default as interpolateTurbo} from "./sequential-multi/turbo.js";
 export {default as interpolateViridis, magma as interpolateMagma, inferno as interpolateInferno, plasma as interpolatePlasma} from "./sequential-multi/viridis.js";

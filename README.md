@@ -233,6 +233,12 @@ Given a number *t* in the range [0,1], returns the corresponding color from the 
 
 Sequential, multi-hue color schemes are available as continuous interpolators (often used with [d3.scaleSequential](https://github.com/d3/d3-scale/blob/master/README.md#sequential-scales)) and as discrete schemes (often used with [d3.scaleOrdinal](https://github.com/d3/d3-scale/blob/master/README.md#ordinal-scales)). Each discrete scheme, such as [d3.schemeBuGn](#schemeBuGn), is represented as an array of arrays of hexadecimal color strings. The *k*th element of this array contains the color scheme of size *k*; for example, `d3.schemeBuGn[9]` contains an array of nine strings representing the nine colors of the blue-green sequential color scheme. Sequential, multi-hue color schemes support a size *k* ranging from 3 to 9.
 
+<a name="interpolateStdGammaII" href=#interpolateStdGammaII">#</a> d3.<b>interpolateStdGammaII</b>(<i>t</i>) [<>](https://github.com/niconoe/d3-scale-chromatic/blob/master/src/sequential-multi/stdGammaII.js "Source")
+
+<img src="https://raw.githubusercontent.com/niconoe/d3-scale-chromatic/master/img/StdGammaII.png" width="100%" height="40" alt="StdGammaII">
+
+Given a number *t* in the range [0,1], returns the corresponding color from the “STD GAMMA-II” color scheme initially implemented in [IDL](https://www.l3harrisgeospatial.com/docs/loadingdefaultcolortables.html).
+
 <a name="interpolateTurbo" href="#interpolateTurbo">#</a> d3.<b>interpolateTurbo</b>(<i>t</i>) [<>](https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/turbo.js "Source")
 
 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/turbo.png" width="100%" height="40" alt="turbo">
