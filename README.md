@@ -26,11 +26,13 @@ If you use npm, `npm install d3-scale-chromatic`. You can also download the [lat
 
 ```html
 <script type="module">
+
 import {interpolateYlGn} from "https://cdn.skypack.dev/d3-scale-chromatic@3";
 
-const yellow = interpolateYlGn(0), // "rgb(255, 255, 229)"
-  yellowGreen = interpolateYlGn(0.5), // "rgb(120, 197, 120)"
-  green = interpolateYlGn(1); // "rgb(0, 69, 41)"
+const yellow = interpolateYlGn(0); // "rgb(255, 255, 229)"
+const yellowGreen = interpolateYlGn(0.5); // "rgb(120, 197, 120)"
+const green = interpolateYlGn(1); // "rgb(0, 69, 41)"
+
 </script>
 ```
 
@@ -42,9 +44,9 @@ For legacy environments, you can load d3-scale-chromatic’s UMD bundle from an 
 <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
 <script>
 
-const yellow = d3.interpolateYlGn(0), // "rgb(255, 255, 229)"
-  yellowGreen = d3.interpolateYlGn(0.5), // "rgb(120, 197, 120)"
-  green = d3.interpolateYlGn(1); // "rgb(0, 69, 41)"
+const yellow = d3.interpolateYlGn(0); // "rgb(255, 255, 229)"
+const yellowGreen = d3.interpolateYlGn(0.5); // "rgb(120, 197, 120)"
+const green = d3.interpolateYlGn(1); // "rgb(0, 69, 41)"
 
 </script>
 ```
