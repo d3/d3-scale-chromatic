@@ -1,8 +1,8 @@
-var tape = require("tape"),
-    d3 = require("../");
+import assert from "assert";
+import * as d3 from "../src/index.js";
 
-tape("exports the expected schemes", function(test) {
-  test.deepEqual(Object.keys(d3).sort(), [
+it("exports the expected schemes", () => {
+  assert.deepStrictEqual(Object.keys(d3).sort(), [
     "interpolateBlues",
     "interpolateBrBG",
     "interpolateBuGn",
@@ -79,5 +79,4 @@ tape("exports the expected schemes", function(test) {
     "schemeYlOrBr",
     "schemeYlOrRd"
   ]);
-  test.end();
 });
