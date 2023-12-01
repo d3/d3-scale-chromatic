@@ -51,6 +51,7 @@ it("exports the expected schemes", () => {
     "schemeGnBu",
     "schemeGreens",
     "schemeGreys",
+    "schemeObservable10",
     "schemeOrRd",
     "schemeOranges",
     "schemePRGn",

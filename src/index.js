@@ -1,6 +1,7 @@
 export {default as schemeCategory10} from "./categorical/category10.js";
 export {default as schemeAccent} from "./categorical/Accent.js";
 export {default as schemeDark2} from "./categorical/Dark2.js";
+export {default as schemeObservable10} from "./categorical/observable10.js";
 export {default as schemePaired} from "./categorical/Paired.js";
 export {default as schemePastel1} from "./categorical/Pastel1.js";
 export {default as schemePastel2} from "./categorical/Pastel2.js";
