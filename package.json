@@ -1,6 +1,6 @@
 {
   "name": "d3-scale-chromatic",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Sequential, diverging and categorical color schemes.",
   "homepage": "https://d3js.org/d3-scale-chromatic/",
   "repository": {
