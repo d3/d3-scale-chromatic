@@ -1,5 +1,5 @@
+import assert from "node:assert";
 import {it} from "vitest";
-import assert from "assert";
 import * as d3 from "../src/index.js";
 
 it("exports the expected schemes", () => {
