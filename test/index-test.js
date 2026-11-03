@@ -1,8 +1,8 @@
-import {test} from "vitest";
+import {it} from "vitest";
 import assert from "assert";
 import * as d3 from "../src/index.js";
 
-test("exports the expected schemes", () => {
+it("exports the expected schemes", () => {
   assert.deepStrictEqual(Object.keys(d3).sort(), [
     "interpolateBlues",
     "interpolateBrBG",
