@@ -7,6 +7,6 @@ This module provides sequential, diverging and categorical color schemes designe
 ## Resources
 
 - [Documentation](https://d3js.org/d3-scale-chromatic)
-- [Examples](https://observablehq.com/collection/@d3/d3-scale-chromatic)
+- [Examples](https://observablehq.com/@d3/-/collection/d3-scale-chromatic)
 - [Releases](https://github.com/d3/d3-scale-chromatic/releases)
 - [Getting help](https://d3js.org/community)
