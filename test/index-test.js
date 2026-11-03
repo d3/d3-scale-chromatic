@@ -1,6 +1,6 @@
 import assert from "node:assert";
 import {it} from "vitest";
-import * as d3 from "../src/index.js";
+import * as d3 from "d3-scale-chromatic";
 
 it("exports the expected schemes", () => {
   assert.deepStrictEqual(Object.keys(d3).sort(), [
